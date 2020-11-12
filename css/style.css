@@ -179,3 +179,68 @@ footer {
 		margin-bottom: 20px;
 	}
 }
+.artikel{
+	display: grid;
+	height: 100%;
+	place-items: center;
+	text-align: center;
+	background: #f2f2f2;
+  }
+.title {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+.artikel{
+  max-width: 1100px;
+  display: flex;
+}
+.artikel .kotak{
+  flex: 1;
+  margin: 0 10px;
+  background: #fff;
+}
+.artikel .kotak .img{
+  height: 200px;
+  width: 100%;
+}
+.artikel .kotak .img img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.artikel .kotak .news{
+  padding: 10px 20px;
+}
+.kotak .news .title{
+  font-size: 25px;
+  font-weight: 600;
+}
+.kotak .news .sub-title{
+  font-size: 20px;
+  font-weight: 600;
+  color: #e74c3c;
+  line-height: 20px;
+}
+.kotak .news p{
+  text-align: justify;
+  margin: 10px 0;
+}
+.kotak .news .btn{
+  display: block;
+  text-align: left;
+  margin: 10px 0;
+}
+.kotak .news .btn button{
+  background: #e74c3c;
+  color: #fff;
+  border: none;
+  outline: none;
+  font-size: 17px;
+  padding: 5px 8px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.kotak .news .btn button:hover{
+  transform: scale(0.9);
+}

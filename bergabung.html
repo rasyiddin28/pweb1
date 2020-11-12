@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bergabung</title>
+	<link rel="stylesheet" href="css/bergabung.css">
+</head>
+<body>
+	<div class="hiro">
+		<div class="form-box">
+			<div class="button-box">
+				<div id="btn"></div>
+				<button type="button" class="toggle-btn" onclick="login()"> Masuk </button>
+				<button type="button" class="toggle-btn" onclick="register()"> Bergabung </button>
+			</div>
+
+			<div class="social-icons">
+				<img src="img/facebook.png">
+				<img src="img/twitter.png">
+				<img src="img/google.png">
+			</div>
+
+	<form id="login" class="input-group">
+		<input type="text" class="input-field" placeholder="Username" required>
+		<input type="text" class="input-field" placeholder="Password" required>
+		<input type="checkbox" class="checkbox">
+		<span> Tetap masuk</span>
+		<button type="submit" class="submit-btn"> Log In</button>
+	</form>
+
+	<form id="register" class="input-group">
+		<input type="text" class="input-field" placeholder="Username" required>
+		<input type="email" class="input-field" placeholder="Email" required>
+		<input type="text" class="input-field" placeholder="Password" required>
+		<input type="checkbox" class="checkbox">
+		<span> Saya telah membaca syarat dan ketentuan</span>
+		<button type="submit" class="submit-btn"> Bergabung</button>
+	</form>
+</div>
+</div>
+
+<script>
+	var x = document.getElementById("login");
+	var y = document.getElementById("register");
+	var z = document.getElementById("btn");	
+
+	function register(){
+		x.style.left = "-400px"
+		y.style.left = "50px"
+		z.style.left = "110px"
+	}
+	function login(){
+		x.style.left = "50px"
+		y.style.left = "450px"
+		z.style.left = "0px"
+	}
+</script>
+</div>
+</body>
+</html>
