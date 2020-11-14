@@ -7,11 +7,11 @@ a {
 	color: inherit;
 	text-decoration: none;
 }
-.medsos {
+.animasi {
 	padding:5px 0;
 	background-color: #60ff6d;
 }
-.medsos ul li {
+.animasi ul li {
 	display: inline-block;
 	color: #fff;
 	margin-right: 10px;
@@ -83,7 +83,7 @@ section h3 {
 	margin-bottom: 25px;
 }
 .about,
-.service {
+.kategori {
 	padding-bottom: 100px;
 }
 .about p {
@@ -93,7 +93,7 @@ section h3 {
 	margin-bottom: 20px;
 	text-align: center;
 }
-.service {
+.kategori {
 	background-color: #f9f9f9;
 }
 .box {
@@ -120,9 +120,12 @@ section h3 {
 	line-height: 70px;
 	font-size: 20px;
 	margin:0 auto;
-}
+} */
 .box .col-4 h4 {
 	margin:20px 0;
+}
+.col-4 .img {
+	padding: 20px;
 }
 footer {
 	padding:30px 0;
