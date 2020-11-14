@@ -18,6 +18,51 @@ body {
     background-color: #fff;
     color: #222;
 }
+a {
+	color: inherit;
+	text-decoration: none;
+}
+.medsos {
+	padding:5px 0;
+	background-color: #60ff6d;
+}
+.medsos ul li {
+	display: inline-block;
+	color: #fff;
+	margin-right: 10px;
+}
+.container {
+	width:80%;
+	margin:0 auto;
+}
+.container:after {
+	content:'';
+	display: block;
+	clear: both;
+}
+header h1 {
+	float: left;
+	padding:15px 0;
+	color: #41f76e;
+}
+header ul {
+	float: right;
+}
+header ul li {
+	display: inline-block;
+}
+header ul li a {
+	padding:25px 20px;
+	display: inline-block;
+}
+header ul li a:hover {
+	background-color: #1fcfac;
+	color: #fff;
+}
+.active {
+	background-color: #1fcfac;
+	color: #fff;
+}
 /* Artikel Section */
 .section {
     padding: 5rem 0 7rem 0;
