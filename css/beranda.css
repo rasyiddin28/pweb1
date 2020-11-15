@@ -7,15 +7,6 @@ a {
 	color: inherit;
 	text-decoration: none;
 }
-.animasi {
-	padding:5px 0;
-	background-color: #60ff6d;
-}
-.animasi ul li {
-	display: inline-block;
-	color: #fff;
-	margin-right: 10px;
-}
 .container {
 	width:80%;
 	margin:0 auto;
@@ -28,7 +19,7 @@ a {
 header h1 {
 	float: left;
 	padding:15px 0;
-	color: #41f76e;
+	color: #000000;
 }
 header ul {
 	float: right;
@@ -41,12 +32,12 @@ header ul li a {
 	display: inline-block;
 }
 header ul li a:hover {
-	background-color: #1fcfac;
-	color: #fff;
+	background-color: #89ffce;
+	color: rgb(0, 0, 0);
 }
 .active {
-	background-color: #1fcfac;
-	color: #fff;
+	background-color: #00be49;
+	color: rgb(255, 255, 255);
 }
 .banner {
 	height: 60vh;
@@ -65,22 +56,16 @@ header ul li a:hover {
 	left: 0;
 	right: 0;
 	bottom: 0;
-	background-color: rgba(20, 143, 119, .6);
+	background-color: rgba(185, 255, 188, 0.6);
 }
 .banner h2 {
-	color: #fff;
+	color: rgb(0, 0, 0);
 	z-index: 1;
 	padding: 20px 25px;
 	border:3px solid #fff;
 }
 section {
 	padding:50px 0;
-}
-section h3 {
-	text-align: center;
-	padding:20px 0;
-	color: #148F77;
-	margin-bottom: 25px;
 }
 .about,
 .kategori {
@@ -160,51 +145,51 @@ footer {
 		margin-bottom: 20px;
 	}
 }
-  .title {
-      margin-bottom: 2rem;
-      text-align: center;
-  }
-  .artikel{
+.title {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+.artikel{
     max-width: 1100px;
     display: flex;
-  }
-  .artikel .kotak{
+}
+.artikel .kotak{
     flex: 1;
     margin: 0 10px;
     background: #fff;
-  }
-  .artikel .kotak .img{
+}
+.artikel .kotak .img{
     height: 200px;
     width: 100%;
-  }
-  .artikel .kotak .img img{
+}
+.artikel .kotak .img img{
     height: 100%;
     width: 100%;
     object-fit: cover;
-  }
-  .artikel .kotak .news{
+}
+.artikel .kotak .news{
     padding: 10px 20px;
-  }
-  .kotak .news .title{
+}
+.kotak .news .title{
     font-size: 25px;
     font-weight: 600;
-  }
-  .kotak .news .sub-title{
+}
+.kotak .news .sub-title{
     font-size: 20px;
     font-weight: 600;
     color: #e74c3c;
     line-height: 20px;
-  }
-  .kotak .news p{
+}
+.kotak .news p{
     text-align: justify;
     margin: 10px 0;
-  }
-  .kotak .news .btn{
+}
+.kotak .news .btn{
     display: block;
     text-align: left;
     margin: 10px 0;
-  }
-  .kotak .news .btn button{
+}
+.kotak .news .btn button{
     background: #aa4003;
     color: #fff;
     border: none;
@@ -214,18 +199,17 @@ footer {
     border-radius: 5px;
     cursor: pointer;
     transition: 0.2s;
-  }
-  .kotak .news .btn button:hover{
+}
+.kotak .news .btn button:hover{
     transform: scale(0.9);
-  }
-  @media only screen and (max-width: 567px) {
+}
+@media only screen and (max-width: 567px) {
     .title h1 {
     font-size: 3rem;
-  }
-  @media only screen and (max-width: 768px) {
+}
+@media only screen and (max-width: 768px) {
     .artikel .title {
     text-align: center;
-  }
-  }
-  }
-  
+}
+}
+}
