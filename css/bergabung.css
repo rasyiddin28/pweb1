@@ -7,15 +7,6 @@ a {
 	color: inherit;
 	text-decoration: none;
 }
-.animasi {
-	padding:5px 0;
-	background-color: #60ff6d;
-}
-.animasi ul li {
-	display: inline-block;
-	color: #fff;
-	margin-right: 10px;
-}
 .container {
 	width:80%;
 	margin:0 auto;
@@ -28,7 +19,7 @@ a {
 header h1 {
 	float: left;
 	padding:15px 0;
-	color: #41f76e;
+	color: #000702;
 }
 header ul {
 	float: right;
