@@ -3,6 +3,7 @@
 <head>
 	<title>Bergabung</title>
 	<link rel="stylesheet" href="css/bergabung.css">
+	<link rel="stylesheet" href="coba.css">
 	<script src="bergabung.js"></script>
 </head>
 <body>
@@ -43,12 +44,23 @@
 	<form id="register" class="input-group">
 		<input type="text" class="input-field" placeholder="Username" required>
 		<input type="email" class="input-field" placeholder="Email" required>
-		<input type="text" class="input-field" placeholder="Password" required>
+		<input type="password" class="input-field" placeholder="Password" required>
 		<input type="checkbox" class="checkbox">
 		<span> Saya telah membaca syarat dan ketentuan</span>
-		<button type="submit" class="submit-btn"> Bergabung</button>
+		<button type="submit" class="submit-btn" id="myBtn"> Bergabung</button>
 	</form>
 	</div>
+		<!-- Modal -->
+    	<div id="myModal" class="modal">
+
+		<div class="modal-content">
+			<span class="close">&times;</span>
+			<p>Akun anda telah dibuat</p>
+			<button onclick="window.location.href='index.html'" class="submit-btn"> Kembali Ke Beranda</button>
+		</div>
+		<script src="coba.js"></script>
+	
+		</div>
 	<script src="bergabung.js"></script>
 	
 </body>
