@@ -15,7 +15,7 @@ body {
     font-family: "Poppins", sans-serif;
     font-size: 1.6rem;
     font-weight: 400;
-    background-color: #fff;
+    background-color: rgb(255, 216, 164);
     color: #222;
 }
 a {
@@ -48,11 +48,11 @@ header ul li a {
 }
 header ul li a:hover {
 	background-color: #1fcfac;
-	color: #fff;
+	color: rgb(5, 5, 5);
 }
 .active {
 	background-color: #1fcfac;
-	color: #fff;
+	color: rgb(29, 28, 28);
 }
 /* Artikel Section */
 .section {
@@ -122,10 +122,12 @@ header ul li a:hover {
     height: 40rem;
     object-fit: cover;
 }
-@media only screen and (max-width: 768px) {
-    .artikel {
-        grid-template-columns: 1fr;
-        gap: 3rem;
+@media only screen and (max-width: 978px) {
+.artikel {
+        grid-template-columns: 5fr;
+        gap: 8rem;
+        max-width: 700px;
+        margin: 20px 0;
 }
 .artikel p:last-child {
     display: none;
@@ -139,23 +141,26 @@ header ul li a:hover {
     text-align: center;
 }
 }
-@media only screen and (max-width: 567px) {
+@media only screen and (max-width: 768px) {
     .title h1 {
     font-size: 3rem;
 }
 @media only screen and (max-width: 768px) {
     .artikel .title {
     text-align: center;
+    max-width: 700px;
+    margin: 20px 0;
 }
 .artikel .left {
-    width: 90%;
+    width: 100%;
+    max-width: 700px;
+    margin: 20px 0;
 }
 .artikel .right img {
     height: 30rem;
 }
 }
 }
-
 
 
 
