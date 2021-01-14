@@ -1,7 +1,47 @@
-body{
+*{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+a {
+	color: inherit;
+	text-decoration: none;
+}
+.container {
+	width:80%;
+	margin:0 auto;
+}
+.container:after {
+	content:'';
+	display: block;
+	clear: both;
+}
+header h1 {
+	float: left;
+	padding:15px 0;
+	color: #000702;
+}
+header ul {
+	float: right;
+}
+header ul li {
+	display: inline-block;
+}
+header ul li a {
+	padding:25px 20px;
+	display: inline-block;
+}
+header ul li a:hover {
+	background-color: #07a787;
+	color: #fff;
+}
+.active {
+	background-color: #1fcfac;
+	color: #fff;
+}
+.body{
 	padding-top: 100px;
 }
-
 #tampilan-produk{
 	display: flex;
 	flex-wrap: wrap;
@@ -14,7 +54,6 @@ body{
 	padding: 10px;
 
 }
-
 #featured{
 	max-width: 500px;
 	max-height: 600px;
@@ -23,7 +62,6 @@ body{
 	border: 2px solid rgb(74, 255, 83);
 
 }
-
 .thumbnail{
 	object-fit: cover;
 	max-width: 180px;
@@ -34,22 +72,18 @@ body{
 	border: 2px solid rgb(101, 255, 96);
 
 }
-
 .thumbnail:hover{
 	opacity:1;
 }
-
 .active{
 	opacity: 1;
 }
-
 #slide-wrapper{
 	max-width: 500px;
 	display: flex;
 	min-height: 100px;
 	align-items: center;
 }
-
 #slider{
 	width: 440px;
 	display: flex;
@@ -63,7 +97,6 @@ body{
 	cursor: pointer;
 	transition: .3s;
 }
-
 .arrow:hover{
 	opacity: .5;
 	width: 35px;
@@ -87,9 +120,18 @@ body{
 	box-shadow: 0 5px 15px #fdfeff;
 	border-radius: 4px;
 }
-
 .button:hover {
 	background: #fff;
 	box-shadow: 0px 2px 10px 5px #63ff78;
 	color: #000;
+}
+@media screen and (max-width: 978px) {
+.artikel{
+    flex-wrap: wrap;
+	flex-direction: column;
+}
+.column{
+    max-width: 700px;
+	margin: 30px 0;
+}
 }
