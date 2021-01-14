@@ -8,12 +8,12 @@
     .content1 .text{
     font-size: 2.5rem;
     font-weight: 600;
-    color: #202020;
+    color: #f0e9e9;
     }
     .content1 .p{
     font-size: 2.1875rem;
     font-weight: 600;
-    color: #202020;
+    color: #fcf8f8;
     }
     footer{
     position: relative;
@@ -32,6 +32,7 @@
     font-size: 1.125rem;
     font-weight: 600;
     text-transform: uppercase;
+    color: rgb(255, 255, 255);
     }
     .box .content{
     margin: 20px 0 0 0;
@@ -39,6 +40,7 @@
     }
     .left .content p{
     text-align: justify;
+    color: rgb(206, 194, 194);
     }
     .left .content .social{
     margin: 20px 0 0 0;
@@ -49,7 +51,7 @@
 .left .content .social a span{
     height: 40px;
     width: 40px;
-    background: #1a1a1a;
+    background: #ddd8d8;
     line-height: 40px;
     text-align: center;
     font-size: 18px;
@@ -61,7 +63,7 @@
 }
 .center .content .fas{
     font-size: 1.4375rem;
-    background: #1a1a1a;
+    background: #c0bdbd;
     height: 45px;
     width: 45px;
     line-height: 45px;
@@ -84,7 +86,7 @@
 .right form .text{
     font-size: 1.0625rem;
     margin-bottom: 2px;
-    color: #656565;
+    color: #fafafa;
 }
 .right form .msg{
     margin-top: 10px;
@@ -92,9 +94,9 @@
 .right form input, .right form textarea{
     width: 100%;
     font-size: 1.0625rem;
-    background: #151515;
+    background: #dddada;
     padding-left: 10px;
-    border: 1px solid #222222;
+    border: 1px solid #fcfafa;
 }
 .right form input:focus,
 .right form textarea:focus{
@@ -118,15 +120,15 @@
     transition: .3s;
 }
 .right form .btn button:hover{
-    background: #000;
+    background: rgb(255, 255, 255);
 }
 .bottom center{
     padding: 5px;
     font-size: 0.9375rem;
-    background: #151515;
+    background: #dbd9d9;
 }
 .bottom center span{
-    color: #656565;
+    color: #0c0b0b;
 }
 .bottom center a{
     color: #f12020;
@@ -135,19 +137,19 @@
 .bottom center a:hover{
     text-decoration: underline;
 }
-@media screen and (max-width: 900px) {
-    footer{
+@media screen and (max-width: 978px) {
+footer{
     position: relative;
     bottom: 0px;
-    }
+}
 .main-content{
     flex-wrap: wrap;
     flex-direction: column;
 }
-    .main-content .box{
+.main-content .box{
     margin: 5px 0;
-    }
+}
 .credit {
-    color:white;
+    color:rgb(255, 238, 238);
 }
 }
