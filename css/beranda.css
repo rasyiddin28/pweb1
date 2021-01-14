@@ -1,10 +1,11 @@
 * {
 	padding:0;
-	margin:0;
-	font-family: sans-serif;
+  margin:0;
+  font-family: sans-serif;
+  color: #050000;
 }
 a {
-	color: inherit;
+	color:  #000000;
 	text-decoration: none;
 }
 .container {
@@ -37,7 +38,15 @@ header ul li a:hover {
 }
 .active {
 	background-color: #00be49;
-	color: rgb(255, 255, 255);
+	color: rgb(0, 0, 0);
+}
+.lg-title {
+    font-size: 2rem;
+    font-weight: 500;
+    text-align: center;
+    padding: 1rem 0;
+    opacity: 0.9;
+    color: #050000;
 }
 .banner {
 	height: 60vh;
@@ -46,23 +55,90 @@ header ul li a:hover {
 	position: relative;
 	display: flex;
 	justify-content: center;
-	align-items: center;
+  align-items: center;
 }
-.banner:after {
-	content:'';
-	display: block;
-	position: absolute;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	background-color: rgba(185, 255, 188, 0.6);
+.center{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
-.banner h2 {
+.text label{
+  font-size: 50px;
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+label span{
+  position: relative;
+  color: rgb(0, 0, 0);
+  z-index: 2;
+}
+label span:hover{
+  filter: blur(1px);
+}
+.text label::before,
+.text label::after{
+  position: absolute;
+  content: attr(data-content);
+  top: 0;
+  left: 0;
+  visibility: hidden;
+}
+.text:hover label::before,
+.text:hover label::after{
+  visibility: visible;
+}
+.text:hover label::before{
+  color: rgba(0, 235, 125, 0.8);
+  animation: glitch .3s cubic-bezier(.25,.46,.45,.94) both infinite;
+}
+.text:hover label::after{
+  color: rgba(255, 0, 234, 0.8);
+  animation: glitch .3s cubic-bezier(.25,.46,.45,.94) reverse both infinite;
+}
+@keyframes glitch {
+  0%{
+    transform: translate(0);
+  }
+  20%{
+    transform: translate(-3px, 3px);
+  }
+  40%{
+    transform: translate(-3px, -3px);
+  }
+  60%{
+    transform: translate(3px, 3px);
+  }
+  80%{
+    transform: translate(3px, -3px);
+  }
+  100%{
+    transform: translate(0);
+  }
+}
+.button {
+	text-align: center;
+	text-transform: uppercase;
+	cursor: pointer;
+	font-size: 50px;
+	letter-spacing: 4px;
+	position: relative;
+	background-color: #f7c260;
+	border: none;
 	color: rgb(0, 0, 0);
-	z-index: 1;
-	padding: 20px 25px;
-	border:3px solid #fff;
+	padding: 0px;
+	width: 600px;
+	text-align: center;
+	transition-duration: 0.4s;
+	overflow: hidden;
+	box-shadow: 0 5px 15px #fdfeff;
+	border-radius: 4px;
+}
+.button:hover {
+	background: #fff;
+	box-shadow: 0px 2px 10px 5px #63ff78;
+	color: #000;
 }
 section {
 	padding:50px 0;
@@ -72,14 +148,14 @@ section {
 	padding-bottom: 100px;
 }
 .about p {
-	color: #666;
+	color: rgb(0, 0, 0);
 	word-spacing: 2px;
 	line-height: 25px;
 	margin-bottom: 20px;
 	text-align: center;
 }
 .kategori {
-	background-color: #f9f9f9;
+	background-color: #ffffff;
 }
 .box {
 	color: #148F77;
@@ -145,71 +221,117 @@ footer {
 		margin-bottom: 20px;
 	}
 }
+@keyframes puterin {
+	100% {
+		transform: rotate(360deg);
+	}
+}
+@media screen and (max-width: 768px){
+	.container {
+		width:90%;
+	}
+	header h1 {
+		text-align: center;
+    float: none;
+	}
+	header ul {
+		text-align: center;
+		float: none;
+	}
+	.box .col-4 {
+		width:100%;
+		float: none;
+		margin-bottom: 20px;
+	}
+}
 .title {
     margin-bottom: 2rem;
     text-align: center;
 }
 .artikel{
-    max-width: 1100px;
-    display: flex;
+padding: 0 40px;
+display: flex;
+align-items: center;
+justify-content: space-between;
 }
-.artikel .kotak{
-    flex: 1;
-    margin: 0 10px;
-    background: #fff;
+.kotak{
+height: 280px;
+max-width: 350px;
+margin: 0 20px;
+background: white;
+transition: 0.4s;
+box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
 }
-.artikel .kotak .img{
-    height: 200px;
-    width: 100%;
+.kotak:hover{
+height: 470px;
+box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
 }
-.artikel .kotak .img img{
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
+.kotak .img{
+height: 200px;
+width: 100%;
 }
-.artikel .kotak .news{
-    padding: 10px 20px;
+.kotak .img img{
+height: 100%;
+width: 100%;
+object-fit: cover;
 }
-.kotak .news .title{
-    font-size: 25px;
-    font-weight: 600;
+.kotak .top-text{
+padding: 5px;
 }
-.kotak .news .sub-title{
-    font-size: 20px;
-    font-weight: 600;
-    color: #e74c3c;
-    line-height: 20px;
+.kotak .top-text .name{
+font-size: 25px;
+font-weight: 600;
+color: #202020;
 }
-.kotak .news p{
-    text-align: justify;
-    margin: 10px 0;
+.kotak .top-text p{
+font-size: 20px;
+font-weight: 600;
+color: #009c22;
+line-height: 20px;
 }
-.kotak .news .btn{
-    display: block;
-    text-align: left;
-    margin: 10px 0;
+.kotak .bottom-text{
+padding: 0 20px 10px 20px;
+margin-top: 5px;
+background: white;
+opacity: 0;
+visibility: hidden;
+transition: 0.1s;
 }
-.kotak .news .btn button{
-    background: #aa4003;
-    color: #fff;
-    border: none;
-    outline: none;
-    font-size: 17px;
-    padding: 5px 8px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: 0.2s;
+.kotak:hover .bottom-text{
+opacity: 1;
+visibility: visible;
 }
-.kotak .news .btn button:hover{
-    transform: scale(0.9);
+.kotak .bottom-text .title{
+text-align: justify;
 }
-@media only screen and (max-width: 567px) {
-    .title h1 {
-    font-size: 3rem;
+.kotak .bottom-text .btn{
+margin: 10px 0;
+text-align: left;
 }
-@media only screen and (max-width: 768px) {
-    .artikel .title {
-    text-align: center;
+.kotak .bottom-text .btn a{
+margin: 22px 0;
+text-decoration: none;
+text-transform: uppercase;
+background: #9eee53;
+color: #000000;
+padding: 15px 6px;
+border-radius: 25px;
+display: inline-flex;
+transition: .3s ease;
 }
+.btn a:hover{
+border-radius: 4px;
+}
+.kotak .bottom-text .btn a:hover{
+transform: scale(0.9);
+}
+@media screen and (max-width: 978px) {
+.artikel{
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.kotak{
+    max-width: 700px;
+    margin: 20px 0;
 }
 }
