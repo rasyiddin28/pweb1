@@ -54,6 +54,29 @@ header ul li a:hover {
 	background-color: #1fcfac;
 	color: rgb(29, 28, 28);
 }
+@keyframes puterin {
+	100% {
+		transform: rotate(360deg);
+	}
+}
+@media screen and (max-width: 768px){
+	.container {
+		width:90%;
+	}
+	header h1 {
+		text-align: center;
+		float: none;
+	}
+	header ul {
+		text-align: center;
+		float: none;
+	}
+	.box .col-4 {
+		width:100%;
+		float: none;
+		margin-bottom: 20px;
+    }
+}
 /* Artikel Section */
 .section {
     padding: 5rem 0 7rem 0;
